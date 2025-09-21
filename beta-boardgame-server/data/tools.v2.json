@@ -1,0 +1,751 @@
+[
+  {
+    "id": "T200",
+    "label": "ETF — Achat ponctuel",
+    "group": "Investissements",
+    "kind": "instant_action",
+    "availableFromTurn": 0,
+    "requiresMarkers": [],
+    "userInputs": [
+      {
+        "key": "lumpSumEUR",
+        "type": "number",
+        "label": "Montant (€)",
+        "min": 200,
+        "step": 100
+      }
+    ],
+    "onUse": {
+      "effects": [
+        {
+          "op": "pay",
+          "amountEUR": "$lumpSumEUR"
+        }
+      ],
+      "markersGranted": [
+        "ETF_INVESTISSEUR"
+      ]
+    },
+    "notes": "Débite le cash et convertit en titres via règles."
+  },
+  {
+    "id": "T201",
+    "label": "ETF — Plan mensuel (ON)",
+    "group": "Investissements",
+    "kind": "subscription",
+    "availableFromTurn": 0,
+    "userInputs": [
+      {
+        "key": "monthlyContributionEUR",
+        "type": "number",
+        "label": "Mensuel (€)",
+        "min": 25,
+        "step": 25,
+        "default": 200
+      },
+      {
+        "key": "riskLevel",
+        "type": "select",
+        "label": "Risque",
+        "options": [
+          "low",
+          "med",
+          "high"
+        ],
+        "default": "med"
+      }
+    ],
+    "onUse": {
+      "subscribe": {
+        "id": "SUB_ETF_PLAN",
+        "vars": {
+          "monthlyContributionEUR": "$monthlyContributionEUR",
+          "riskLevel": "$riskLevel"
+        },
+        "markersGranted": [
+          "ETF_INVESTISSEUR"
+        ],
+        "createPosition": {
+          "type": "ETF_PLAN"
+        }
+      }
+    },
+    "lifecycle": {
+      "onCancel": {
+        "actions": [
+          {
+            "do": "PAUSE_SUBSCRIPTION"
+          },
+          {
+            "do": "SET_POSITION_STATUS",
+            "to": "PAUSED"
+          }
+        ]
+      },
+      "onEndGame": {
+        "settlement": "LIQUIDATE",
+        "rulesKey": "SETTLE_ETF",
+        "options": {
+          "carryOverAllowed": false
+        }
+      }
+    },
+    "notes": "Coût/ tour = monthly × 12 appliqué par runner. End game = liquidation (PV, flat tax, frais)."
+  },
+  {
+    "id": "T202",
+    "label": "ETF — Plan (OFF)",
+    "group": "Investissements",
+    "kind": "subscription",
+    "onUse": {
+      "unsubscribe": "SUB_ETF_PLAN"
+    },
+    "lifecycle": {},
+    "notes": "Stoppe le flux récurrent."
+  },
+  {
+    "id": "T210",
+    "label": "Actions — Achat ponctuel",
+    "group": "Investissements",
+    "kind": "instant_action",
+    "availableFromTurn": 0,
+    "userInputs": [
+      {
+        "key": "lumpSumEUR",
+        "type": "number",
+        "label": "Montant (€)",
+        "min": 200,
+        "step": 100
+      }
+    ],
+    "onUse": {
+      "effects": [
+        {
+          "op": "pay",
+          "amountEUR": "$lumpSumEUR"
+        }
+      ],
+      "markersGranted": []
+    },
+    "notes": "Achat one-shot; fiscalité flat tax sur gains/dividendes via règles."
+  },
+  {
+    "id": "T240",
+    "label": "Or — Achat (physique)",
+    "group": "Investissements réels",
+    "kind": "instant_action",
+    "availableFromTurn": 0,
+    "userInputs": [
+      {
+        "key": "lumpSumEUR",
+        "type": "number",
+        "label": "Montant (€)",
+        "min": 200,
+        "step": 100
+      },
+      {
+        "key": "custodyCostAnnualEUR",
+        "type": "number",
+        "label": "Frais de garde/an (€)",
+        "min": 0,
+        "step": 10,
+        "default": 0
+      }
+    ],
+    "onUse": {
+      "effects": [
+        {
+          "op": "pay",
+          "amountEUR": "$lumpSumEUR"
+        }
+      ],
+      "markersGranted": [
+        "OR_DETENU"
+      ]
+    },
+    "lifecycle": {
+      "onEndGame": {
+        "settlement": "LIQUIDATE",
+        "rulesKey": "SETTLE_GOLD"
+      }
+    },
+    "notes": "Plus-values exonérées si détention >1 tour (via règles). Frais de garde annuels gérés par runner."
+  },
+  {
+    "id": "T241",
+    "label": "Argent — Achat (physique)",
+    "group": "Investissements réels",
+    "kind": "instant_action",
+    "availableFromTurn": 0,
+    "userInputs": [
+      {
+        "key": "lumpSumEUR",
+        "type": "number",
+        "label": "Montant (€)",
+        "min": 200,
+        "step": 100
+      },
+      {
+        "key": "custodyCostAnnualEUR",
+        "type": "number",
+        "label": "Frais de garde/an (€)",
+        "min": 0,
+        "step": 10,
+        "default": 0
+      }
+    ],
+    "onUse": {
+      "effects": [
+        {
+          "op": "pay",
+          "amountEUR": "$lumpSumEUR"
+        }
+      ],
+      "markersGranted": [
+        "ARGENT_DETENU"
+      ]
+    },
+    "lifecycle": {
+      "onEndGame": {
+        "settlement": "LIQUIDATE",
+        "rulesKey": "SETTLE_SILVER"
+      }
+    },
+    "notes": "Plus-values exonérées si détention >1 tour (via règles)."
+  },
+  {
+    "id": "T260",
+    "label": "Crypto — Achat",
+    "group": "Investissements",
+    "kind": "instant_action",
+    "availableFromTurn": 0,
+    "userInputs": [
+      {
+        "key": "lumpSumEUR",
+        "type": "number",
+        "label": "Montant (€)",
+        "min": 100,
+        "step": 50
+      },
+      {
+        "key": "holdingIntentYears",
+        "type": "number",
+        "label": "Intention de détention (ans)",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "default": 1
+      }
+    ],
+    "onUse": {
+      "effects": [
+        {
+          "op": "pay",
+          "amountEUR": "$lumpSumEUR"
+        }
+      ],
+      "markersGranted": [
+        "CRYPTO_DETENU"
+      ]
+    },
+    "lifecycle": {
+      "onEndGame": {
+        "settlement": "LIQUIDATE",
+        "rulesKey": "SETTLE_CRYPTO"
+      }
+    },
+    "notes": "Fiscalité: exonération si >1 tour; sinon barème avec franchise (règles)."
+  },
+  {
+    "id": "T261",
+    "label": "Crypto — Activer staking (ON)",
+    "group": "Investissements",
+    "kind": "subscription",
+    "availableFromTurn": 0,
+    "requiresMarkers": [
+      "CRYPTO_DETENU"
+    ],
+    "userInputs": [
+      {
+        "key": "stakingYieldPercent",
+        "type": "number",
+        "label": "Rendement (%/an)",
+        "min": 0,
+        "max": 30,
+        "step": 0.5,
+        "default": 5
+      },
+      {
+        "key": "termYears",
+        "type": "number",
+        "label": "Durée (ans)",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "default": 1
+      }
+    ],
+    "onUse": {
+      "subscribe": {
+        "id": "SUB_STAKING",
+        "vars": {
+          "stakingYieldPercent": "$stakingYieldPercent",
+          "termYears": "$termYears"
+        },
+        "markersGranted": [
+          "CRYPTO_STAKING_ACTIF"
+        ],
+        "createPosition": {
+          "type": "CRYPTO_STAKING",
+          "locks": {
+            "unlockTurn": "$NOW+$termYears"
+          }
+        }
+      }
+    },
+    "lifecycle": {
+      "onCancel": {
+        "conditions": {
+          "ifLocked": "START_UNBONDING"
+        },
+        "actions": [
+          {
+            "do": "SET_POSITION_STATUS",
+            "to": "UNBONDING"
+          },
+          {
+            "do": "SET_TIMER_TURNS",
+            "value": 1
+          }
+        ]
+      },
+      "onEndGame": {
+        "settlement": "LIQUIDATE",
+        "rulesKey": "SETTLE_CRYPTO_STAKING"
+      }
+    },
+    "notes": "Revenus imposables en cours de jeu; unbonding 1 tour si résiliation anticipée."
+  },
+  {
+    "id": "T262",
+    "label": "Crypto — Staking (OFF)",
+    "group": "Investissements",
+    "kind": "subscription",
+    "requiresMarkers": [
+      "CRYPTO_STAKING_ACTIF"
+    ],
+    "onUse": {
+      "unsubscribe": "SUB_STAKING"
+    },
+    "notes": "Arrête le staking à la fin de la période en cours."
+  },
+  {
+    "id": "T300",
+    "label": "SCPI — Achat",
+    "group": "Immobilier",
+    "kind": "instant_action",
+    "availableFromTurn": 0,
+    "userInputs": [
+      {
+        "key": "lumpSumEUR",
+        "type": "number",
+        "label": "Montant (€)",
+        "min": 500,
+        "step": 100
+      },
+      {
+        "key": "grossYieldPercent",
+        "type": "number",
+        "label": "Rdt brut (%/an)",
+        "min": 2,
+        "max": 8,
+        "step": 0.5,
+        "default": 4.5
+      }
+    ],
+    "onUse": {
+      "effects": [
+        {
+          "op": "pay",
+          "amountEUR": "$lumpSumEUR"
+        }
+      ],
+      "markersGranted": [
+        "SCPI_DETENUE"
+      ]
+    },
+    "lifecycle": {
+      "onEndGame": {
+        "settlement": "LIQUIDATE",
+        "rulesKey": "SETTLE_SCPI"
+      }
+    },
+    "notes": "Distrib. trimestrielles/annuelles via runner; flat tax par défaut."
+  },
+  {
+    "id": "T330",
+    "label": "Immo — Acheter bien locatif",
+    "group": "Immobilier",
+    "kind": "instant_action",
+    "availableFromTurn": 0,
+    "userInputs": [
+      {
+        "key": "purchasePriceEUR",
+        "type": "number",
+        "label": "Prix d'achat (€)",
+        "min": 50000,
+        "step": 5000
+      },
+      {
+        "key": "equityEUR",
+        "type": "number",
+        "label": "Apport (€)",
+        "min": 0,
+        "step": 1000,
+        "default": 20000
+      },
+      {
+        "key": "mortgageRatePercent",
+        "type": "number",
+        "label": "Taux crédit (%/an)",
+        "min": 1,
+        "max": 10,
+        "step": 0.1,
+        "default": 3
+      },
+      {
+        "key": "rentGrossEUR",
+        "type": "number",
+        "label": "Loyer brut mensuel (€)",
+        "min": 0,
+        "step": 50
+      },
+      {
+        "key": "chargesMonthlyEUR",
+        "type": "number",
+        "label": "Charges mensuelles (€)",
+        "min": 0,
+        "step": 10
+      }
+    ],
+    "onUse": {
+      "effects": [
+        {
+          "op": "pay",
+          "amountEUR": "$equityEUR"
+        }
+      ],
+      "markersGranted": [
+        "BIEN_LOCATIF"
+      ],
+      "createPosition": {
+        "type": "IMMO_LOCATIF"
+      }
+    },
+    "lifecycle": {
+      "onCancel": {
+        "actions": [
+          {
+            "do": "CLOSE_POSITION",
+            "rulesKey": "SETTLE_IMMO_SALE_NOW"
+          }
+        ]
+      },
+      "onEndGame": {
+        "settlement": "LIQUIDATE",
+        "rulesKey": "SETTLE_IMMO_END"
+      }
+    },
+    "notes": "Dette/loyers/charges/impôts gérés par règles; amortissement ≈2%/an (règles)."
+  },
+  {
+    "id": "T331",
+    "label": "Immo — Travaux déductibles",
+    "group": "Immobilier",
+    "kind": "instant_action",
+    "requiresMarkers": [
+      "BIEN_LOCATIF"
+    ],
+    "userInputs": [
+      {
+        "key": "lumpSumEUR",
+        "type": "number",
+        "label": "Montant travaux (€)",
+        "min": 500,
+        "step": 100
+      }
+    ],
+    "onUse": {
+      "effects": [
+        {
+          "op": "pay",
+          "amountEUR": "$lumpSumEUR"
+        }
+      ]
+    },
+    "notes": "Règles: charge immédiate vs amélioration (impact PV)."
+  },
+  {
+    "id": "T360",
+    "label": "Bauspar — Ouvrir",
+    "group": "Épargne logement",
+    "kind": "toggle_marker",
+    "onUse": {
+      "markersGranted": [
+        "BAUSPAR_ENCOURS"
+      ],
+      "createPosition": {
+        "type": "BAUSPAR"
+      }
+    },
+    "notes": "Phase épargne puis droit à prêt à taux garanti (via règles)."
+  },
+  {
+    "id": "T361",
+    "label": "Bauspar — Épargner (mensuel)",
+    "group": "Épargne logement",
+    "kind": "subscription",
+    "requiresMarkers": [
+      "BAUSPAR_ENCOURS"
+    ],
+    "userInputs": [
+      {
+        "key": "monthlyContributionEUR",
+        "type": "number",
+        "label": "Épargne mensuelle (€)",
+        "min": 25,
+        "step": 25,
+        "default": 100
+      },
+      {
+        "key": "targetSumEUR",
+        "type": "number",
+        "label": "Somme cible (€)",
+        "min": 5000,
+        "step": 1000,
+        "default": 20000
+      }
+    ],
+    "onUse": {
+      "subscribe": {
+        "id": "SUB_BAUSPAR",
+        "vars": {
+          "monthlyContributionEUR": "$monthlyContributionEUR",
+          "targetSumEUR": "$targetSumEUR"
+        }
+      }
+    },
+    "notes": "Quand épargne ≥ ~40% target, une règle peut poser un marker de droit au prêt (si tu l'implémentes)."
+  },
+  {
+    "id": "T400",
+    "label": "Assurance Décès — Souscrire",
+    "group": "Assurances",
+    "kind": "subscription",
+    "userInputs": [
+      {
+        "key": "coverageEUR",
+        "type": "number",
+        "label": "Capital garanti (€)",
+        "min": 50000,
+        "step": 10000,
+        "default": 200000
+      },
+      {
+        "key": "premiumAnnualEUR",
+        "type": "number",
+        "label": "Prime annuelle (€)",
+        "min": 50,
+        "step": 10,
+        "default": 300
+      },
+      {
+        "key": "termYears",
+        "type": "number",
+        "label": "Durée (ans)",
+        "min": 5,
+        "max": 30,
+        "step": 1,
+        "default": 20
+      }
+    ],
+    "onUse": {
+      "subscribe": {
+        "id": "SUB_DECES",
+        "vars": {
+          "premiumAnnualEUR": "$premiumAnnualEUR",
+          "termYears": "$termYears",
+          "coverageEUR": "$coverageEUR"
+        },
+        "createPosition": {
+          "type": "ASSURANCE_DECES"
+        }
+      }
+    },
+    "lifecycle": {
+      "onCancel": {
+        "actions": [
+          {
+            "do": "PAUSE_SUBSCRIPTION"
+          }
+        ]
+      },
+      "onEndGame": {
+        "settlement": "KEEP",
+        "rulesKey": "SETTLE_DECES"
+      }
+    },
+    "notes": "Risque pur; si décès pendant la durée → versement coverageEUR (règles)."
+  },
+  {
+    "id": "T410",
+    "label": "Complémentaire Dentaire — Souscrire",
+    "group": "Assurances",
+    "kind": "subscription",
+    "userInputs": [
+      {
+        "key": "premiumAnnualEUR",
+        "type": "number",
+        "label": "Prime annuelle (€)",
+        "min": 50,
+        "step": 10,
+        "default": 240
+      },
+      {
+        "key": "waitingPeriodTurns",
+        "type": "number",
+        "label": "Carence (tours)",
+        "min": 0,
+        "max": 4,
+        "step": 1,
+        "default": 1
+      }
+    ],
+    "onUse": {
+      "subscribe": {
+        "id": "SUB_DENTAIRE",
+        "vars": {
+          "premiumAnnualEUR": "$premiumAnnualEUR",
+          "waiting": "$waitingPeriodTurns"
+        }
+      },
+      "markersGranted": [
+        "DENTAIRE_ASSURE"
+      ]
+    },
+    "notes": "Mitige coûts dentaires (règles)."
+  },
+  {
+    "id": "T411",
+    "label": "Complémentaire Hospitalisation — Souscrire",
+    "group": "Assurances",
+    "kind": "subscription",
+    "userInputs": [
+      {
+        "key": "premiumAnnualEUR",
+        "type": "number",
+        "label": "Prime annuelle (€)",
+        "min": 50,
+        "step": 10,
+        "default": 300
+      },
+      {
+        "key": "waitingPeriodTurns",
+        "type": "number",
+        "label": "Carence (tours)",
+        "min": 0,
+        "max": 4,
+        "step": 1,
+        "default": 1
+      }
+    ],
+    "onUse": {
+      "subscribe": {
+        "id": "SUB_HOSP",
+        "vars": {
+          "premiumAnnualEUR": "$premiumAnnualEUR",
+          "waiting": "$waitingPeriodTurns"
+        }
+      },
+      "markersGranted": [
+        "HOSP_ASSURE"
+      ]
+    },
+    "notes": "Mitige coûts hospitalisation (règles)."
+  },
+  {
+    "id": "T420",
+    "label": "Hausrat — Souscrire",
+    "group": "Assurances",
+    "kind": "subscription",
+    "userInputs": [
+      {
+        "key": "premiumAnnualEUR",
+        "type": "number",
+        "label": "Prime annuelle (€)",
+        "min": 40,
+        "step": 10,
+        "default": 120
+      },
+      {
+        "key": "coverageEUR",
+        "type": "number",
+        "label": "Plafond (€)",
+        "min": 10000,
+        "step": 5000,
+        "default": 50000
+      }
+    ],
+    "onUse": {
+      "subscribe": {
+        "id": "SUB_HAUSRAT",
+        "vars": {
+          "premiumAnnualEUR": "$premiumAnnualEUR",
+          "coverageEUR": "$coverageEUR"
+        }
+      },
+      "markersGranted": [
+        "HAUSRAT_ASSURE"
+      ]
+    },
+    "notes": "Sinistres domestiques couverts (règles)."
+  },
+  {
+    "id": "T430",
+    "label": "Rechtsschutz — Souscrire",
+    "group": "Assurances",
+    "kind": "subscription",
+    "userInputs": [
+      {
+        "key": "premiumAnnualEUR",
+        "type": "number",
+        "label": "Prime annuelle (€)",
+        "min": 60,
+        "step": 10,
+        "default": 180
+      },
+      {
+        "key": "waitingPeriodTurns",
+        "type": "number",
+        "label": "Carence (tours)",
+        "min": 0,
+        "max": 4,
+        "step": 1,
+        "default": 1
+      }
+    ],
+    "onUse": {
+      "subscribe": {
+        "id": "SUB_RS",
+        "vars": {
+          "premiumAnnualEUR": "$premiumAnnualEUR",
+          "waiting": "$waitingPeriodTurns"
+        }
+      },
+      "markersGranted": [
+        "RECHTSSCHUTZ_ASSURE"
+      ]
+    },
+    "notes": "Prise en charge frais juridiques (règles)."
+  }
+]

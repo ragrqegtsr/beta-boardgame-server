@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: beta-boardgame-server
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: DATA_DIR
+        value: "data"
+    healthCheckPath: /health
+    headers:
+      - name: Connection
+        value: keep-alive

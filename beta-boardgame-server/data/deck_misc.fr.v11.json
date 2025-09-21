@@ -1,0 +1,1305 @@
+{
+  "version": "1.1",
+  "nodes": [
+    {
+      "id": 101,
+      "title": "Krach boursier",
+      "category": "Crises Globales",
+      "pile": "Contrainte",
+      "slug": "krach-boursier",
+      "tags": [
+        "contrainte",
+        "crises-globales"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Krach boursier, contrainte de crises globales pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 102,
+      "title": "Bulle immobilière",
+      "category": "Crises Globales",
+      "pile": "Contrainte",
+      "slug": "bulle-immobiliere",
+      "tags": [
+        "contrainte",
+        "crises-globales"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Bulle immobilière, contrainte de crises globales pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 103,
+      "title": "Hyperinflation",
+      "category": "Crises Globales",
+      "pile": "Contrainte",
+      "slug": "hyperinflation",
+      "tags": [
+        "contrainte",
+        "crises-globales"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Hyperinflation, contrainte de crises globales pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 104,
+      "title": "Récession",
+      "category": "Crises Globales",
+      "pile": "Contrainte",
+      "slug": "recession",
+      "tags": [
+        "contrainte",
+        "crises-globales"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Récession, contrainte de crises globales pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 105,
+      "title": "Choc énergétique",
+      "category": "Crises Globales",
+      "pile": "Contrainte",
+      "slug": "choc-energetique",
+      "tags": [
+        "contrainte",
+        "crises-globales"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Choc énergétique, contrainte de crises globales pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 106,
+      "title": "Réforme fiscale urgence",
+      "category": "Crises Globales",
+      "pile": "Contrainte",
+      "slug": "reforme-fiscale-urgence",
+      "tags": [
+        "contrainte",
+        "crises-globales"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Réforme fiscale urgence, contrainte de crises globales pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 107,
+      "title": "Pandémie mondiale",
+      "category": "Crises Globales",
+      "pile": "Contrainte",
+      "slug": "pandemie-mondiale",
+      "tags": [
+        "contrainte",
+        "crises-globales"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pandémie mondiale, contrainte de crises globales pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 108,
+      "title": "Hausse massive des taux",
+      "category": "Crises Globales",
+      "pile": "Contrainte",
+      "slug": "hausse-massive-des-taux",
+      "tags": [
+        "contrainte",
+        "crises-globales"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Hausse massive des taux, contrainte de crises globales pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 109,
+      "title": "Frais bancaires",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "frais-bancaires",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Frais bancaires, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 110,
+      "title": "Erreur paie",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "erreur-paie",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Erreur paie, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 111,
+      "title": "Impôts locaux +",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "impots-locaux",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Impôts locaux +, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 112,
+      "title": "Mauvais conseil ami",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "mauvais-conseil-ami",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Mauvais conseil ami, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 113,
+      "title": "Vol carte bancaire",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "vol-carte-bancaire",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Vol carte bancaire, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 114,
+      "title": "Facture énergie +",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "facture-energie",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Facture énergie +, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 115,
+      "title": "Investissement chute",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "investissement-chute",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Investissement chute, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 116,
+      "title": "Charges copropriété +",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "charges-copropriete",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Charges copropriété +, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 117,
+      "title": "Inflation alimentaire +",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "inflation-alimentaire",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Inflation alimentaire +, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 118,
+      "title": "Prêt ami perdu",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "pret-ami-perdu",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Prêt ami perdu, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 119,
+      "title": "Erreur déclaration impôts",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "erreur-declaration-impots",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Erreur déclaration impôts, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 120,
+      "title": "Perte objet valeur",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "perte-objet-valeur",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Perte objet valeur, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 121,
+      "title": "Usurpation identité",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "usurpation-identite",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Usurpation identité, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 122,
+      "title": "Assurance refuse remboursement",
+      "category": "Finances Personnelles",
+      "pile": "Contrainte",
+      "slug": "assurance-refuse-remboursement",
+      "tags": [
+        "contrainte",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Assurance refuse remboursement, contrainte de finances personnelles pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 123,
+      "title": "Gel des salaires",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "gel-des-salaires",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Gel des salaires, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 124,
+      "title": "Restructuration",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "restructuration",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Restructuration, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 125,
+      "title": "Projet annulé",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "projet-annule",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Projet annulé, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 126,
+      "title": "Mauvaise évaluation",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "mauvaise-evaluation",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Mauvaise évaluation, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 127,
+      "title": "Pression accrue",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "pression-accrue",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pression accrue, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 128,
+      "title": "Faillite client",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "faillite-client",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Faillite client, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 129,
+      "title": "Secteur en crise",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "secteur-en-crise",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Secteur en crise, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 130,
+      "title": "Mutation non désirée",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "mutation-non-desiree",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Mutation non désirée, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 131,
+      "title": "Manager toxique",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "manager-toxique",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Manager toxique, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 132,
+      "title": "Burn-out sévère",
+      "category": "Carrière & Travail",
+      "pile": "Contrainte",
+      "slug": "burn-out-severe",
+      "tags": [
+        "carriere-travail",
+        "contrainte"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Burn-out sévère, contrainte de carrière & travail pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 133,
+      "title": "Panne chaudière",
+      "category": "Logement & Véhicule",
+      "pile": "Contrainte",
+      "slug": "panne-chaudiere",
+      "tags": [
+        "contrainte",
+        "logement-vehicule"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Panne chaudière, contrainte de logement & véhicule pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 134,
+      "title": "Réparation voiture",
+      "category": "Logement & Véhicule",
+      "pile": "Contrainte",
+      "slug": "reparation-voiture",
+      "tags": [
+        "contrainte",
+        "logement-vehicule"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Réparation voiture, contrainte de logement & véhicule pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 135,
+      "title": "Toit endommagé",
+      "category": "Logement & Véhicule",
+      "pile": "Contrainte",
+      "slug": "toit-endommage",
+      "tags": [
+        "contrainte",
+        "logement-vehicule"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Toit endommagé, contrainte de logement & véhicule pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 136,
+      "title": "Augmentation loyer",
+      "category": "Logement & Véhicule",
+      "pile": "Contrainte",
+      "slug": "augmentation-loyer",
+      "tags": [
+        "contrainte",
+        "logement-vehicule"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Augmentation loyer, contrainte de logement & véhicule pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 137,
+      "title": "Ravalement façade",
+      "category": "Logement & Véhicule",
+      "pile": "Contrainte",
+      "slug": "ravalement-facade",
+      "tags": [
+        "contrainte",
+        "logement-vehicule"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Ravalement façade, contrainte de logement & véhicule pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 138,
+      "title": "Accident voiture responsable",
+      "category": "Logement & Véhicule",
+      "pile": "Contrainte",
+      "slug": "accident-voiture-responsable",
+      "tags": [
+        "contrainte",
+        "logement-vehicule"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Accident voiture responsable, contrainte de logement & véhicule pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 139,
+      "title": "Nuisibles maison",
+      "category": "Logement & Véhicule",
+      "pile": "Contrainte",
+      "slug": "nuisibles-maison",
+      "tags": [
+        "contrainte",
+        "logement-vehicule"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Nuisibles maison, contrainte de logement & véhicule pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 140,
+      "title": "Contrôle technique voiture",
+      "category": "Logement & Véhicule",
+      "pile": "Contrainte",
+      "slug": "controle-technique-voiture",
+      "tags": [
+        "contrainte",
+        "logement-vehicule"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Contrôle technique voiture, contrainte de logement & véhicule pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 141,
+      "title": "Rage de dents",
+      "category": "Santé & Imprévus",
+      "pile": "Contrainte",
+      "slug": "rage-de-dents",
+      "tags": [
+        "contrainte",
+        "sante-imprevus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Rage de dents, contrainte de santé & imprévus pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 142,
+      "title": "Problèmes dos",
+      "category": "Santé & Imprévus",
+      "pile": "Contrainte",
+      "slug": "problemes-dos",
+      "tags": [
+        "contrainte",
+        "sante-imprevus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Problèmes dos, contrainte de santé & imprévus pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 143,
+      "title": "Lunettes cassées",
+      "category": "Santé & Imprévus",
+      "pile": "Contrainte",
+      "slug": "lunettes-cassees",
+      "tags": [
+        "contrainte",
+        "sante-imprevus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Lunettes cassées, contrainte de santé & imprévus pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 144,
+      "title": "Maladie enfant",
+      "category": "Santé & Imprévus",
+      "pile": "Contrainte",
+      "slug": "maladie-enfant",
+      "tags": [
+        "contrainte",
+        "sante-imprevus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Maladie enfant, contrainte de santé & imprévus pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 145,
+      "title": "Frais médicaux étranger",
+      "category": "Santé & Imprévus",
+      "pile": "Contrainte",
+      "slug": "frais-medicaux-etranger",
+      "tags": [
+        "contrainte",
+        "sante-imprevus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Frais médicaux étranger, contrainte de santé & imprévus pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 146,
+      "title": "Cadeau mariage amis",
+      "category": "Social & Légal",
+      "pile": "Contrainte",
+      "slug": "cadeau-mariage-amis",
+      "tags": [
+        "contrainte",
+        "social-legal"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Cadeau mariage amis, contrainte de social & légal pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 147,
+      "title": "EVG/EVJF coûteux",
+      "category": "Social & Légal",
+      "pile": "Contrainte",
+      "slug": "evgevjf-couteux",
+      "tags": [
+        "contrainte",
+        "social-legal"
+      ],
+      "markersGranted": [],
+      "shortDescription": "EVG/EVJF coûteux, contrainte de social & légal pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 148,
+      "title": "Litige artisan",
+      "category": "Social & Légal",
+      "pile": "Contrainte",
+      "slug": "litige-artisan",
+      "tags": [
+        "contrainte",
+        "social-legal"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Litige artisan, contrainte de social & légal pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 149,
+      "title": "Amende tapage",
+      "category": "Social & Légal",
+      "pile": "Contrainte",
+      "slug": "amende-tapage",
+      "tags": [
+        "contrainte",
+        "social-legal"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Amende tapage, contrainte de social & légal pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 150,
+      "title": "Perte procès",
+      "category": "Social & Légal",
+      "pile": "Contrainte",
+      "slug": "perte-proces",
+      "tags": [
+        "contrainte",
+        "social-legal"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Perte procès, contrainte de social & légal pouvant entraîner des dépenses ou des pertes."
+    },
+    {
+      "id": 151,
+      "title": "Remboursement impôts",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "remboursement-impots",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Remboursement impôts, carte liée à finances personnelles."
+    },
+    {
+      "id": 152,
+      "title": "Erreur banque favorable",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "erreur-banque-favorable",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Erreur banque favorable, carte liée à finances personnelles."
+    },
+    {
+      "id": 153,
+      "title": "Héritage inattendu",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "heritage-inattendu",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Héritage inattendu, carte liée à finances personnelles."
+    },
+    {
+      "id": 154,
+      "title": "Baisse taux crédit",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "baisse-taux-credit",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Baisse taux crédit, carte liée à finances personnelles."
+    },
+    {
+      "id": 155,
+      "title": "Prime État rénovation",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "prime-etat-renovation",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Prime État rénovation, carte liée à finances personnelles."
+    },
+    {
+      "id": 156,
+      "title": "Ami rembourse dette",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "ami-rembourse-dette",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Ami rembourse dette, carte liée à finances personnelles."
+    },
+    {
+      "id": 157,
+      "title": "Optimisation fiscale réussie",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "optimisation-fiscale-reussie",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Optimisation fiscale réussie, carte liée à finances personnelles."
+    },
+    {
+      "id": 158,
+      "title": "Vente objets internet",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "vente-objets-internet",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Vente objets internet, carte liée à finances personnelles."
+    },
+    {
+      "id": 159,
+      "title": "Baisse essence",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "baisse-essence",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Baisse essence, carte liée à finances personnelles."
+    },
+    {
+      "id": 160,
+      "title": "Subvention vélo électrique",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "subvention-velo-electrique",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Subvention vélo électrique, carte liée à finances personnelles."
+    },
+    {
+      "id": 161,
+      "title": "Chèque-cadeau entreprise",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "cheque-cadeau-entreprise",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Chèque-cadeau entreprise, carte liée à finances personnelles."
+    },
+    {
+      "id": 162,
+      "title": "Jackpot mini",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "jackpot-mini",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Jackpot mini, carte liée à finances personnelles."
+    },
+    {
+      "id": 163,
+      "title": "Récompense concours",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "recompense-concours",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Récompense concours, carte liée à finances personnelles."
+    },
+    {
+      "id": 164,
+      "title": "Gain tombola locale",
+      "category": "Finances Personnelles",
+      "pile": "Bonus",
+      "slug": "gain-tombola-locale",
+      "tags": [
+        "bonus",
+        "finances-personnelles"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Gain tombola locale, carte liée à finances personnelles."
+    },
+    {
+      "id": 165,
+      "title": "Prime fin d’année",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "prime-fin-dannee",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Prime fin d’année, carte liée à carrière & travail."
+    },
+    {
+      "id": 166,
+      "title": "Prime exceptionnelle",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "prime-exceptionnelle",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Prime exceptionnelle, carte liée à carrière & travail."
+    },
+    {
+      "id": 167,
+      "title": "Promotion inattendue",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "promotion-inattendue",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Promotion inattendue, carte liée à carrière & travail."
+    },
+    {
+      "id": 168,
+      "title": "Offre concurrente",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "offre-concurrente",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Offre concurrente, carte liée à carrière & travail."
+    },
+    {
+      "id": 169,
+      "title": "Participation bénéfices",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "participation-benefices",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Participation bénéfices, carte liée à carrière & travail."
+    },
+    {
+      "id": 170,
+      "title": "Manager vous adore",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "manager-vous-adore",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Manager vous adore, carte liée à carrière & travail."
+    },
+    {
+      "id": 171,
+      "title": "Projet équipe réussi",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "projet-equipe-reussi",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Projet équipe réussi, carte liée à carrière & travail."
+    },
+    {
+      "id": 172,
+      "title": "Formation entreprise financée",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "formation-entreprise-financee",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Formation entreprise financée, carte liée à carrière & travail."
+    },
+    {
+      "id": 173,
+      "title": "Revenu activité secondaire",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "revenu-activite-secondaire",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Revenu activité secondaire, carte liée à carrière & travail."
+    },
+    {
+      "id": 174,
+      "title": "Retraite d’entreprise améliorée",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "retraite-dentreprise-amelioree",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Retraite d’entreprise améliorée, carte liée à carrière & travail."
+    },
+    {
+      "id": 175,
+      "title": "Prix professionnel",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "prix-professionnel",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Prix professionnel, carte liée à carrière & travail."
+    },
+    {
+      "id": 176,
+      "title": "Congé offert",
+      "category": "Carrière & Travail",
+      "pile": "Bonus",
+      "slug": "conge-offert",
+      "tags": [
+        "bonus",
+        "carriere-travail"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Congé offert, carte liée à carrière & travail."
+    },
+    {
+      "id": 177,
+      "title": "Année boursière exceptionnelle",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "annee-boursiere-exceptionnelle",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Année boursière exceptionnelle, carte liée à investissements."
+    },
+    {
+      "id": 178,
+      "title": "Action “coup de cœur” x3",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "action-coup-de-cur-x3",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Action “coup de cœur” x3, carte liée à investissements."
+    },
+    {
+      "id": 179,
+      "title": "Immobilier local flambe",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "immobilier-local-flambe",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Immobilier local flambe, carte liée à investissements."
+    },
+    {
+      "id": 180,
+      "title": "SCPI dividende exceptionnel",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "scpi-dividende-exceptionnel",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "SCPI dividende exceptionnel, carte liée à investissements."
+    },
+    {
+      "id": 181,
+      "title": "Or grimpe",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "or-grimpe",
+      "tags": [
+        "bonus",
+        "investissement",
+        "or"
+      ],
+      "markersGranted": [
+        "OR_POSITION"
+      ],
+      "shortDescription": "Or grimpe, carte liée à investissements."
+    },
+    {
+      "id": 182,
+      "title": "Conseiller a eu du flair",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "conseiller-a-eu-du-flair",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Conseiller a eu du flair, carte liée à investissements."
+    },
+    {
+      "id": 183,
+      "title": "Crowdlending réussi",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "crowdlending-reussi",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Crowdlending réussi, carte liée à investissements."
+    },
+    {
+      "id": 184,
+      "title": "Investissement vert explose",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "investissement-vert-explose",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Investissement vert explose, carte liée à investissements."
+    },
+    {
+      "id": 185,
+      "title": "Nouvelle enveloppe défiscalisée",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "nouvelle-enveloppe-defiscalisee",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Nouvelle enveloppe défiscalisée, carte liée à investissements."
+    },
+    {
+      "id": 186,
+      "title": "Bien locatif reloué + cher",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "bien-locatif-reloue-cher",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Bien locatif reloué + cher, carte liée à investissements."
+    },
+    {
+      "id": 187,
+      "title": "Crypto “moon” x5",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "crypto-moon-x5",
+      "tags": [
+        "bonus",
+        "crypto",
+        "investissement"
+      ],
+      "markersGranted": [
+        "CRYPTO_POSITION"
+      ],
+      "shortDescription": "Crypto “moon” x5, carte liée à investissements."
+    },
+    {
+      "id": 188,
+      "title": "Réinvestissement dividendes",
+      "category": "Investissements",
+      "pile": "Bonus",
+      "slug": "reinvestissement-dividendes",
+      "tags": [
+        "bonus",
+        "investissement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Réinvestissement dividendes, carte liée à investissements."
+    },
+    {
+      "id": 189,
+      "title": "Année en pleine forme",
+      "category": "Santé & Bien-être",
+      "pile": "Bonus",
+      "slug": "annee-en-pleine-forme",
+      "tags": [
+        "bonus",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Année en pleine forme, carte liée à santé & bien-être."
+    },
+    {
+      "id": 190,
+      "title": "Programme bien-être entreprise",
+      "category": "Santé & Bien-être",
+      "pile": "Bonus",
+      "slug": "programme-bien-etre-entreprise",
+      "tags": [
+        "bonus",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Programme bien-être entreprise, carte liée à santé & bien-être."
+    },
+    {
+      "id": 191,
+      "title": "Challenge sportif réussi",
+      "category": "Santé & Bien-être",
+      "pile": "Bonus",
+      "slug": "challenge-sportif-reussi",
+      "tags": [
+        "bonus",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Challenge sportif réussi, carte liée à santé & bien-être."
+    },
+    {
+      "id": 192,
+      "title": "Mutuelle remboursement bonus",
+      "category": "Santé & Bien-être",
+      "pile": "Bonus",
+      "slug": "mutuelle-remboursement-bonus",
+      "tags": [
+        "bonus",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Mutuelle remboursement bonus, carte liée à santé & bien-être."
+    },
+    {
+      "id": 193,
+      "title": "Cuisiner maison",
+      "category": "Santé & Bien-être",
+      "pile": "Bonus",
+      "slug": "cuisiner-maison",
+      "tags": [
+        "bonus",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Cuisiner maison, carte liée à santé & bien-être."
+    },
+    {
+      "id": 194,
+      "title": "Vacances reposantes",
+      "category": "Santé & Bien-être",
+      "pile": "Bonus",
+      "slug": "vacances-reposantes",
+      "tags": [
+        "bonus",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Vacances reposantes, carte liée à santé & bien-être."
+    },
+    {
+      "id": 195,
+      "title": "Cadeau anniversaire généreux",
+      "category": "Social & Hasard",
+      "pile": "Bonus",
+      "slug": "cadeau-anniversaire-genereux",
+      "tags": [
+        "bonus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Cadeau anniversaire généreux, carte liée à social & hasard."
+    },
+    {
+      "id": 196,
+      "title": "Gain jeu-concours",
+      "category": "Social & Hasard",
+      "pile": "Bonus",
+      "slug": "gain-jeu-concours",
+      "tags": [
+        "bonus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Gain jeu-concours, carte liée à social & hasard."
+    },
+    {
+      "id": 197,
+      "title": "Trouver objet de valeur",
+      "category": "Social & Hasard",
+      "pile": "Bonus",
+      "slug": "trouver-objet-de-valeur",
+      "tags": [
+        "bonus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Trouver objet de valeur, carte liée à social & hasard."
+    },
+    {
+      "id": 198,
+      "title": "Gros gain loto",
+      "category": "Social & Hasard",
+      "pile": "Bonus",
+      "slug": "gros-gain-loto",
+      "tags": [
+        "bonus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Gros gain loto, carte liée à social & hasard."
+    },
+    {
+      "id": 199,
+      "title": "Article presse positif",
+      "category": "Social & Hasard",
+      "pile": "Bonus",
+      "slug": "article-presse-positif",
+      "tags": [
+        "bonus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Article presse positif, carte liée à social & hasard."
+    },
+    {
+      "id": 200,
+      "title": "Enfant boursier",
+      "category": "Social & Hasard",
+      "pile": "Bonus",
+      "slug": "enfant-boursier",
+      "tags": [
+        "bonus"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Enfant boursier, carte liée à social & hasard."
+    }
+  ]
+}
