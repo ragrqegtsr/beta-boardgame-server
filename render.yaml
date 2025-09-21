@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: beta-boardgame-server
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://jeu-ffa.fellerfinancialadvisory.com/host.html,https://jeu-ffa.fellerfinancialadvisory.com/student.html
+      - key: DATA_DIR
+        value: data
+    healthCheckPath: /health
