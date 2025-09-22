@@ -8,7 +8,10 @@ services:
     autoDeploy: true
     envVars:
       - key: CORS_ORIGINS
-        value: https://jeu-ffa.fellerfinancialadvisory.com/host.html,https://jeu-ffa.fellerfinancialadvisory.com/student.html
+        value: "*"
       - key: DATA_DIR
-        value: data
+        value: "data"
     healthCheckPath: /health
+    headers:
+      - name: Connection
+        value: keep-alive

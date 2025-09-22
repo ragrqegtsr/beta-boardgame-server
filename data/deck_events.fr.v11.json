@@ -1,0 +1,660 @@
+{
+  "version": "1.1",
+  "nodes": [
+    {
+      "id": 53,
+      "title": "Mariage – Grand",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "mariage-grand",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Cérémonie ambitieuse. A: … R: …",
+      "notes": "Markers: ADD MARIE."
+    },
+    {
+      "id": 54,
+      "title": "Mariage – Intime",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "mariage-intime",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Cérémonie en petit comité. A: … R: …",
+      "notes": "Markers: ADD MARIE."
+    },
+    {
+      "id": 55,
+      "title": "Projet premier enfant",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "naissance-premier-enfant",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Bienvenue au #1. A: … R: …",
+      "notes": "Markers: ADD ENFANT_1."
+    },
+    {
+      "id": 56,
+      "title": "Projet deuxième enfant",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "naissance-deuxieme-enfant",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: On remet ça ? A: … R: …",
+      "notes": "Markers: ADD ENFANT_2."
+    },
+    {
+      "id": 57,
+      "title": "Séparation",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "divorce",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Fin d’un chapitre. A: … R: …",
+      "notes": "Markers: REMOVE MARIE (si présent)."
+    },
+    {
+      "id": 58,
+      "title": "Aider un parent",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "aider-parent-en-difficulte",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Soutien régulier à un parent. A: … R: …",
+      "notes": "Markers: ADD PARENT_DEPENDANT."
+    },
+    {
+      "id": 59,
+      "title": "Conjoint — Promotion",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "conjoint-promotion",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Level-up du conjoint. A: … R: …",
+      "notes": "Modulateur: FORMATION_OK → bonus de promo (cf. logique)."
+    },
+    {
+      "id": 60,
+      "title": "Conjoint — Chômage",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "conjoint-chomage",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Perte d’emploi du conjoint. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 61,
+      "title": "Grand anniversaire",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "grand-anniversaire",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Fête mémorable ou sobriété ? A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 62,
+      "title": "Conflit familial",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "conflit-familial",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: On recolle les morceaux ? A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 63,
+      "title": "Soutien scolaire enfant",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "soutien-scolaire-enfant",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Un bon prof vaut trois carnets de notes. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 64,
+      "title": "Adoption animal",
+      "category": "Famille & Relations",
+      "pile": "Événement",
+      "slug": "adoption-animal",
+      "tags": [
+        "evenement",
+        "famille-relations"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Compagnon à quatre pattes. A: … R: …",
+      "notes": "Markers: ADD ANIMAL. Modulateur: ASSURANCE_ANIMAL → frais réduits."
+    },
+    {
+      "id": 65,
+      "title": "Promotion interne",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "promotion-interne",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Nouveau badge, nouvelles attentes. A: … R: …",
+      "notes": "Modulateur: FORMATION_OK → promotion améliorée (cf. logique)."
+    },
+    {
+      "id": 66,
+      "title": "Opportunité autre ville",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "opportunite-autre-ville",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Reloc’ ou full-remote ? A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 67,
+      "title": "Nouveau cap au bureau",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "entreprise-rachetee",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Rachat / nouvelle direction. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 68,
+      "title": "Pause imposée (burn-out)",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "burn-out",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Ton corps dit stop. A: … R: …",
+      "notes": "Modulateurs: BU_STANDARD limite la perte ; BU_PREMIUM couvre quasi tout."
+    },
+    {
+      "id": 69,
+      "title": "Nouveau manager",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "nouveau-manager",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Nouvelles méthodes, nouveaux rituels. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 70,
+      "title": "Conflit collègue",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "conflit-collegue",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: On clarifie ou on bloque un dossier ? A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 71,
+      "title": "Formation pro",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "formation-professionnelle",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Bootcamp express. A: … R: …",
+      "notes": "Markers: ADD FORMATION_OK."
+    },
+    {
+      "id": 72,
+      "title": "Employeur offre actions",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "employeur-offre-actions",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: FOMO vs prudence. A: … R: …",
+      "notes": "Note: pas de marker — simple investissement."
+    },
+    {
+      "id": 73,
+      "title": "Donation familiale",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "charrette-rush",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Coup de pouce d’un proche. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 75,
+      "title": "Panne électroménager",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "mutation-sectorielle",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Frigo capricieux. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 76,
+      "title": "Nouvelle voiture",
+      "category": "Carrière & Travail",
+      "pile": "Événement",
+      "slug": "mission-internationale",
+      "tags": [
+        "carriere-travail",
+        "evenement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Le vieux tacot rend l’âme. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 77,
+      "title": "Résolution sport",
+      "category": "Santé & Bien-être",
+      "pile": "Événement",
+      "slug": "resolution-sport",
+      "tags": [
+        "evenement",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: La constance, pas l’exploit. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 78,
+      "title": "Routine de santé (maladie chronique)",
+      "category": "Santé & Bien-être",
+      "pile": "Événement",
+      "slug": "maladie-hivernale",
+      "tags": [
+        "evenement",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Traitement régulier. A: … R: …",
+      "notes": "Modulateurs: BU_PREMIUM → 0 €/mois ; BU_STANDARD → −100 €/mois ; sinon −200 €/mois."
+    },
+    {
+      "id": 79,
+      "title": "Manger mieux (bio)",
+      "category": "Santé & Bien-être",
+      "pile": "Événement",
+      "slug": "manger-mieux-bio",
+      "tags": [
+        "evenement",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Assiette futée. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 80,
+      "title": "Stress intense",
+      "category": "Santé & Bien-être",
+      "pile": "Événement",
+      "slug": "stress-intense",
+      "tags": [
+        "evenement",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Pression à gérer. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 81,
+      "title": "Accident domestique",
+      "category": "Santé & Bien-être",
+      "pile": "Événement",
+      "slug": "nouveau-hobby",
+      "tags": [
+        "evenement",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Oups à la maison. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 82,
+      "title": "Hospitalisation courte",
+      "category": "Santé & Bien-être",
+      "pile": "Événement",
+      "slug": "blessure-mineure",
+      "tags": [
+        "evenement",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Séjour éclair à l’hôpital. A: … R: …",
+      "notes": "Modulateur: COMPLEMENTAIRE_HOSPITALISATION (alias HOSP_ASSURE) → −300 € au lieu de −2 000 €."
+    },
+    {
+      "id": 83,
+      "title": "Longue maladie (année blanche)",
+      "category": "Santé & Bien-être",
+      "pile": "Événement",
+      "slug": "check-up-complet",
+      "tags": [
+        "evenement",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Année de convalescence. A: … R: …",
+      "notes": "Modulateurs: BU_STANDARD → perte plafonnée ; BU_PREMIUM → quasi 0 %."
+    },
+    {
+      "id": 84,
+      "title": "Baisse de moral prolongée",
+      "category": "Santé & Bien-être",
+      "pile": "Événement",
+      "slug": "insomnie",
+      "tags": [
+        "evenement",
+        "sante-bien-etre"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Demander de l’aide ou serrer les dents ? A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 85,
+      "title": "Accrochage en ville (vélo/auto)",
+      "category": "Logement & Environnement",
+      "pile": "Événement",
+      "slug": "demenagement",
+      "tags": [
+        "evenement",
+        "logement-environnement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Petite aile froissée, vraie paperasse. A: … R: …",
+      "notes": "Modulateurs: KFZ_TOUS_RISQUES → 0 à −500 € ; KFZ_TIERS → −1 500 €."
+    },
+    {
+      "id": 86,
+      "title": "Parent : escalade de soins",
+      "category": "Logement & Environnement",
+      "pile": "Événement",
+      "slug": "nouveaux-voisins",
+      "tags": [
+        "evenement",
+        "logement-environnement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Perte d’autonomie d’un parent. A: … R: …",
+      "notes": "Markers: ADD PARENT_DEPENDANT."
+    },
+    {
+      "id": 87,
+      "title": "Deuil et démarches",
+      "category": "Logement & Environnement",
+      "pile": "Événement",
+      "slug": "gros-travaux-maison",
+      "tags": [
+        "evenement",
+        "logement-environnement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Entre émotions et paperasse. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 88,
+      "title": "Voyage imprévu",
+      "category": "Logement & Environnement",
+      "pile": "Événement",
+      "slug": "degat-des-eaux",
+      "tags": [
+        "evenement",
+        "logement-environnement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Dernière minute. A: … R: …",
+      "notes": "Modulateur: ASSURANCE_VOYAGE → remboursement/−0 à −200 €."
+    },
+    {
+      "id": 89,
+      "title": "Voyage lointain",
+      "category": "Logement & Environnement",
+      "pile": "Événement",
+      "slug": "quartier-a-la-mode",
+      "tags": [
+        "evenement",
+        "logement-environnement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Grand départ. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 90,
+      "title": "City trip",
+      "category": "Logement & Environnement",
+      "pile": "Événement",
+      "slug": "immeuble-construit",
+      "tags": [
+        "evenement",
+        "logement-environnement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Escapade citadine. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 91,
+      "title": "Vacances annulées",
+      "category": "Logement & Environnement",
+      "pile": "Événement",
+      "slug": "potager-maison",
+      "tags": [
+        "evenement",
+        "logement-environnement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Plouf… annulé. A: … R: …",
+      "notes": "Modulateur: ASSURANCE_VOYAGE → 0 € (remboursé)."
+    },
+    {
+      "id": 92,
+      "title": "Voyage professionnel",
+      "category": "Logement & Environnement",
+      "pile": "Événement",
+      "slug": "cambriolage",
+      "tags": [
+        "evenement",
+        "logement-environnement"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Mission en déplacement. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 93,
+      "title": "Grandes vacances",
+      "category": "Social & Loisirs",
+      "pile": "Événement",
+      "slug": "grandes-vacances",
+      "tags": [
+        "evenement",
+        "social-loisirs"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Break d’été. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 94,
+      "title": "Déménagement",
+      "category": "Social & Loisirs",
+      "pile": "Événement",
+      "slug": "nouveau-groupe-amis",
+      "tags": [
+        "evenement",
+        "social-loisirs"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Cartons & nouveau départ. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 95,
+      "title": "Achat maison secondaire",
+      "category": "Social & Loisirs",
+      "pile": "Événement",
+      "slug": "engagement-associatif",
+      "tags": [
+        "evenement",
+        "social-loisirs"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Échappatoire au vert. A: … R: …",
+      "notes": "Markers: ADD PROPRIETAIRE_SECONDAIRE."
+    },
+    {
+      "id": 96,
+      "title": "Organiser grande fête",
+      "category": "Social & Loisirs",
+      "pile": "Événement",
+      "slug": "organiser-grande-fete",
+      "tags": [
+        "evenement",
+        "social-loisirs"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: La soirée de l’année. A: … R: …",
+      "notes": "—"
+    },
+    {
+      "id": 97,
+      "title": "Amende circulation",
+      "category": "Social & Loisirs",
+      "pile": "Événement",
+      "slug": "achat-loisir-couteux",
+      "tags": [
+        "evenement",
+        "social-loisirs"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Pitch: Flash surprise. A: … R: …",
+      "notes": "Modulateur: PROTECTION_JURIDIQUE (alias RECHTSSCHUTZ_ASSURE) → reste à charge réduit."
+    },
+    {
+      "id": 98,
+      "title": "Ami proche déménage",
+      "category": "Social & Loisirs",
+      "pile": "Événement",
+      "slug": "ami-proche-demenage",
+      "tags": [
+        "evenement",
+        "social-loisirs"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Ami proche déménage, évènement de social & loisirs ayant un impact ponctuel sur finances, temps ou bien-être."
+    },
+    {
+      "id": 99,
+      "title": "Passion club sport",
+      "category": "Social & Loisirs",
+      "pile": "Événement",
+      "slug": "passion-club-sport",
+      "tags": [
+        "evenement",
+        "social-loisirs"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Passion club sport, évènement de social & loisirs ayant un impact ponctuel sur finances, temps ou bien-être."
+    },
+    {
+      "id": 100,
+      "title": "Prendre des cours",
+      "category": "Social & Loisirs",
+      "pile": "Événement",
+      "slug": "prendre-des-cours",
+      "tags": [
+        "evenement",
+        "social-loisirs"
+      ],
+      "markersGranted": [],
+      "shortDescription": "Prendre des cours, évènement de social & loisirs ayant un impact ponctuel sur finances, temps ou bien-être."
+    }
+  ]
+}
