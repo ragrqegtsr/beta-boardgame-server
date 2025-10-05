@@ -1,6 +1,7 @@
 // server/server.js
 const express = require('express');
 const http = require('http');
+const path = require('path');
 const cors = require('cors');
 const { Server } = require('socket.io');
 
@@ -23,6 +24,8 @@ const ALLOWED_ORIGINS = (process.env.CORS_ORIGINS || '').split(',').filter(Boole
       return cb(new Error('Not allowed by CORS'), false);
     },
   }));
+  const publicDir = path.join(__dirname, '..', 'public');
+  app.use(express.static(publicDir));
 
   const decks = loadAll(process.env.DATA_DIR || 'data');
   const store = new SessionStore();
@@ -134,6 +137,18 @@ const ALLOWED_ORIGINS = (process.env.CORS_ORIGINS || '').split(',').filter(Boole
   }
 
   app.get('/health', (_, res) => res.status(200).send('OK'));
+
+  app.get('/', (_, res) => {
+    res.sendFile(path.join(publicDir, 'host.html'));
+  });
+
+  app.get('/host', (_, res) => {
+    res.sendFile(path.join(publicDir, 'host.html'));
+  });
+
+  app.get('/player', (_, res) => {
+    res.sendFile(path.join(publicDir, 'player.html'));
+  });
 
   app.post('/session', (req, res) => {
     try {

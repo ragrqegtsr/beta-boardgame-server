@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Espace joueur · Beta Boardgame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1 class="header__title">Espace Joueur</h1>
+        <div class="header__meta">
+          <span class="chip">Code <strong id="player-session-code">—</strong></span>
+          <span class="chip">Tour <strong id="player-turn">—</strong></span>
+          <span class="chip">Statut <strong id="player-status">Hors ligne</strong></span>
+        </div>
+      </div>
+      <div class="profile-strip">
+        <span class="profile-chip" id="player-profile">Profil non défini</span>
+        <button class="secondary" id="leave-session" type="button" disabled>Quitter</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="layout">
+        <div class="column">
+          <section class="card" id="join-card">
+            <div class="section-title">
+              <h2>Rejoindre une partie</h2>
+              <span class="chip">Connexion sécurisée</span>
+            </div>
+            <form class="form-grid" id="join-form">
+              <label>Code
+                <input type="text" name="code" placeholder="ABCDE" maxlength="5" required />
+              </label>
+              <label>Nom ou pseudo
+                <input type="text" name="name" placeholder="Votre nom" />
+              </label>
+              <button class="primary" type="submit">Rejoindre</button>
+            </form>
+          </section>
+
+          <section class="card">
+            <div class="section-title">
+              <h2>Cartes du tour</h2>
+              <span class="chip" id="player-card-refresh">—</span>
+            </div>
+            <div class="cards-grid" id="player-common-cards"></div>
+          </section>
+
+          <section class="card">
+            <div class="section-title">
+              <h2>Notes personnelles</h2>
+              <span class="chip">Privé</span>
+            </div>
+            <div class="note-area">
+              <textarea id="player-notes" placeholder="Écrivez vos décisions, idées ou calculs."></textarea>
+            </div>
+          </section>
+        </div>
+
+        <div class="column">
+          <section class="card">
+            <div id="player-midgame" class="midgame-banner">Pause intermédiaire reçue.</div>
+            <div class="timer-panel">
+              <div class="timer-ring" id="player-timer-ring"><span id="player-timer-value">--:--</span></div>
+              <p id="player-timer-status">En attente du lancement</p>
+              <div class="progress-bar"><span id="player-timer-progress"></span></div>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="section-title">
+              <h2>Vos actions</h2>
+              <span class="chip">Décision rapide</span>
+            </div>
+            <div class="player-action-bar">
+              <button class="accept" id="action-accept" type="button" disabled>Accepter</button>
+              <button class="reject" id="action-reject" type="button" disabled>Refuser</button>
+              <button class="lock" id="action-lock" type="button" disabled>Verrouiller ma décision</button>
+              <button class="secondary" id="action-ready" type="button" disabled>Je suis prêt</button>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="section-title">
+              <h2>Journal personnel</h2>
+              <span class="chip" id="player-journal-count">0 entrée</span>
+            </div>
+            <div class="timeline" id="player-journal"></div>
+          </section>
+        </div>
+
+        <div class="column">
+          <section class="card">
+            <div class="section-title">
+              <h2>Équipe connectée</h2>
+              <span class="chip" id="player-team-count">0 joueur</span>
+            </div>
+            <div class="player-list" id="player-team"></div>
+          </section>
+
+          <section class="card">
+            <div class="section-title">
+              <h2>Statistiques rapides</h2>
+              <span class="chip">Décisions</span>
+            </div>
+            <div class="mini-grid">
+              <div class="mini-metric">
+                <h4>Décisions prises</h4>
+                <strong id="metric-decisions">0</strong>
+              </div>
+              <div class="mini-metric">
+                <h4>Revenus estimés</h4>
+                <strong id="metric-income">0</strong>
+              </div>
+              <div class="mini-metric">
+                <h4>Dépenses estimées</h4>
+                <strong id="metric-expense">0</strong>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div class="toast-container" id="player-toasts"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/player.js"></script>
+  </body>
+</html>
