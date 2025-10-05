@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tableau animateur · Beta Boardgame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1 class="header__title">Espace Animateur</h1>
+        <div class="header__meta">
+          <span class="chip">Code session <strong id="session-code">—</strong></span>
+          <span class="chip">Mode <strong id="session-mode">—</strong></span>
+          <span class="chip">Tour <strong id="session-turn">—</strong></span>
+          <span class="chip">Phase <strong id="session-phase">—</strong></span>
+        </div>
+      </div>
+      <div class="profile-strip" id="session-actions">
+        <button class="secondary" id="copy-code" type="button" disabled>Copier le code</button>
+        <button class="primary" id="start-game" type="button" disabled>Démarrer la partie</button>
+        <button class="secondary" id="next-turn" type="button" disabled>Tour suivant</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="layout">
+        <div class="column">
+          <section class="card">
+            <div class="section-title">
+              <h2>Configuration</h2>
+              <span class="chip" id="config-status">En attente</span>
+            </div>
+            <form class="form-grid" id="session-form">
+              <label>Mode de jeu
+                <select name="mode" required>
+                  <option value="long" selected>Long</option>
+                  <option value="blitz">Blitz</option>
+                </select>
+              </label>
+              <label>Langue
+                <select name="lang" required>
+                  <option value="fr" selected>Français</option>
+                </select>
+              </label>
+              <label>Rejoindre une session existante
+                <input type="text" name="code" placeholder="Code (facultatif)" autocomplete="off" maxlength="5" />
+              </label>
+              <button class="primary" type="submit">Créer ou rejoindre</button>
+            </form>
+          </section>
+
+          <section class="card">
+            <div class="section-title">
+              <h2>Joueurs connectés</h2>
+              <span class="chip" id="player-count">0 joueur</span>
+            </div>
+            <div class="player-list" id="player-list"></div>
+          </section>
+        </div>
+
+        <div class="column">
+          <section class="card">
+            <div id="midgame-banner" class="midgame-banner">Pause intermédiaire recommandée.</div>
+            <div class="timer-panel">
+              <div class="timer-ring" id="timer-ring"><span id="timer-value">--:--</span></div>
+              <p id="timer-status">Timer en attente</p>
+              <div class="progress-bar" aria-hidden="true"><span id="timer-progress"></span></div>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="section-title">
+              <h2>Cartes communes</h2>
+              <span class="chip" id="card-refresh">—</span>
+            </div>
+            <div class="cards-grid" id="common-cards"></div>
+            <details style="margin-top:16px;">
+              <summary>Historique des tirages</summary>
+              <div class="timeline" id="draw-history"></div>
+            </details>
+          </section>
+
+          <section class="card">
+            <div class="section-title">
+              <h2>Journal global</h2>
+              <span class="chip" id="journal-count">0 entrée</span>
+            </div>
+            <div class="timeline" id="global-journal"></div>
+          </section>
+        </div>
+
+        <div class="column">
+          <section class="card">
+            <div class="section-title">
+              <h2>Tableau des joueurs</h2>
+              <span class="chip">Analyses en direct</span>
+            </div>
+            <div class="player-list" id="player-analytics"></div>
+          </section>
+
+          <section class="card">
+            <div class="section-title">
+              <h2>Notifications</h2>
+              <span class="chip">Temps réel</span>
+            </div>
+            <div class="timeline" id="event-log"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/host.js"></script>
+  </body>
+</html>
